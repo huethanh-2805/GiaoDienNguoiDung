@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="right"
+            android:text="Username" android:minWidth="70dp">
+        </TextView>
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint=""
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2" android:gravity="right"
+            android:text="Password" android:minWidth="70dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" android:id="@+id/txtPassword"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text3" android:gravity="right"
+            android:text="Retype" android:minWidth="70dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" android:id="@+id/txtRetype"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtBirth"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="20/10/1980" android:gravity="center"/>
+        <Button
+            android:layout_width="150dp" android:layout_toRightOf="@+id/txtBirth"
+            android:layout_height="wrap_content"
+            android:text="Select" android:id="@+id/btnSelect" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"  android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkMale" android:text="Male"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  android:layout_marginLeft="50dp"
+                android:id="@+id/chkFemale" android:text="Female"/>
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobbies"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkTennis" android:text="Tennis"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+            android:id="@+id/chkFootball" android:text="Football"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+            android:id="@+id/chkOthers" android:text="Others"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_gravity="center"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnReset" android:text="Reset"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Signup" android:text="Sign-up"/>
+    </LinearLayout>
+
+
+</LinearLayout>
